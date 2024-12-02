@@ -26,32 +26,17 @@ h1 {
         color: #7ABA78; /* Accent color on hover */
     }
     body {
-        background-color: #F6E9B2; /* Your desired background color */
+        background-color: #9EDF9C; /* Your desired background color */
         font-family: Arial, Helvetica, sans-serif;
         color: #0A6847; /* Text color */
     }
 
     /* Center the main content */
     .stApp {
-        background-color: #F6E9B2; /* Matching the body background */
+        background-color: #9EDF9C; /* Matching the body background */
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-        .btn-submit button {
-        padding: 12px 20px;
-        background-color: #0A6847;
-        color: #F3CA52;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-submit button:hover {
-        background-color: #7ABA78;
-        color: #F6E9B2;
     }
 
 </style>
