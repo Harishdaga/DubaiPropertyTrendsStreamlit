@@ -1,5 +1,4 @@
 import streamlit as st
-from task import print_hello
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
 st.header('Dubai Property Trends', divider=True)
