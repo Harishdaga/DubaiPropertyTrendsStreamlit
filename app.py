@@ -6,34 +6,34 @@ custom_css = """
 <style>
 h1 {
         font-size: 3rem;
-        color: #FA812F; /* Main heading color */
+        color: #ABBA7C; /* Main heading color */
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     h1:hover {
-        color: #7ABA78; /* Accent color on hover */
+        color: #FFE31A; /* Accent color on hover */
     }
         legend {
         font-size: 2rem;
-        color: #FA812F; /* Matches primary text theme */
+        color: #ABBA7C; /* Matches primary text theme */
         text-align: center;
         margin-bottom: 10px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     legend:hover {
-        color: #7ABA78; /* Accent color on hover */
+        color: #FFE31A; /* Accent color on hover */
     }
     body {
-        background-color: #3B1C32; /* Your desired background color */
+        background-color: #3D5300; /* Your desired background color */
         font-family: Arial, Helvetica, sans-serif;
-        color: #9EDF9C; /* Text color */
+        color: #F09319; /* Text color */
     }
 
     /* Center the main content */
     .stApp {
-        background-color: #3B1C32; /* Matching the body background */
+        background-color: #3D5300; /* Matching the body background */
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
