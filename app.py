@@ -6,7 +6,7 @@ custom_css = """
 <style>
 h1 {
         font-size: 3rem;
-        color: #78B3CE; /* Main heading color */
+        color: #FA812F; /* Main heading color */
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -17,7 +17,7 @@ h1 {
     }
         legend {
         font-size: 2rem;
-        color: #78B3CE; /* Matches primary text theme */
+        color: #FA812F; /* Matches primary text theme */
         text-align: center;
         margin-bottom: 10px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
