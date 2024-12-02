@@ -1,91 +1,9 @@
 import streamlit as st
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-# Define custom CSS to match HTML styles
-custom_css = """
-<style>
-    body {
-        background-color: #F6E9B2; /* Soft background color */
-        font-family: Arial, Helvetica, sans-serif;
-        color: #0A6847; /* Primary text color */
-    }
+st.header('Dubai Property Trends', divider=True)
 
-    h1 {
-        font-size: 3rem;
-        color: #0A6847; /* Main heading color */
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    h1:hover {
-        color: #7ABA78; /* Accent color on hover */
-    }
-
-    legend {
-        font-size: 2rem;
-        color: #0A6847; /* Matches primary text theme */
-        text-align: center;
-        margin-bottom: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    legend:hover {
-        color: #7ABA78; /* Accent color on hover */
-    }
-
-    .form-container {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr); /* Flexible layout */
-        grid-gap: 10px;
-        margin: 0 auto;
-        max-width: 1600px;
-        padding: 10px;
-        background-color: #F3CA52; /* Warm secondary background */
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-item {
-        grid-column: span 2; /* Default span for form items */
-    }
-
-    .form-control,
-    select {
-        font-size: 1rem;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #F6E9B2; /* Light input background */
-        color: #0A6847; /* Input text color */
-        border: 1px solid #0A6847; /* Consistent border */
-    }
-
-    .btn-submit {
-        grid-column: span 12; /* Full-width button */
-        text-align: center;
-    }
-
-    .btn-submit button {
-        padding: 12px 20px;
-        background-color: #0A6847; /* Button color */
-        color: #F3CA52; /* Button text color */
-        border: none;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-submit button:hover {
-        background-color: #7ABA78; /* Hover background color */
-        color: #F6E9B2; /* Light hover text color */
-    }
-</style>
-"""
-st.markdown(custom_css, unsafe_allow_html=True)
-
-# App content
-st.markdown("<h1>Dubai Property Trends</h1>", unsafe_allow_html=True)
-st.markdown("<legend>Property Price Prediction</legend>", unsafe_allow_html=True)
+st.write('Predict Home Price')
 
 with st.form(key='user_form', border=False, enter_to_submit=True):
     a, b, c, d, e = st.columns(gap='small', vertical_alignment='top', spec=[.2, .2, .2, .2, .2])
