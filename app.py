@@ -26,14 +26,14 @@ h1 {
         color: #7ABA78; /* Accent color on hover */
     }
     body {
-        background-color: #9EDF9C; /* Your desired background color */
+        background-color: #9694FF; /* Your desired background color */
         font-family: Arial, Helvetica, sans-serif;
-        color: #0A6847; /* Text color */
+        color: #9EDF9C; /* Text color */
     }
 
     /* Center the main content */
     .stApp {
-        background-color: #9EDF9C; /* Matching the body background */
+        background-color: #9694FF; /* Matching the body background */
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
