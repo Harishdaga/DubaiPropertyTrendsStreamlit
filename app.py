@@ -38,6 +38,21 @@ h1 {
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
+        .btn-submit button {
+        padding: 12px 20px;
+        background-color: #0A6847;
+        color: #F3CA52;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-submit button:hover {
+        background-color: #7ABA78;
+        color: #F6E9B2;
+    }
 
 </style>
 """
