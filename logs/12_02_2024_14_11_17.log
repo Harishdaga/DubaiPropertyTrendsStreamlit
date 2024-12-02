@@ -1,0 +1,10 @@
+[ 2024-12-02 14:12:16,504 ] 26 root - INFO - Doing Data Ingestions
+[ 2024-12-02 14:12:16,513 ] 34 root - INFO - Raw data csv file reading done
+[ 2024-12-02 14:12:16,523 ] 40 root - INFO - train test data spliting initiated
+[ 2024-12-02 14:12:16,532 ] 47 root - INFO - Ingestion of data completed
+[ 2024-12-02 14:12:16,535 ] 66 root - INFO - read sucessfully train and test data
+[ 2024-12-02 14:12:16,535 ] 67 root - INFO - obtaining preprocessor
+[ 2024-12-02 14:12:16,536 ] 76 root - INFO - Applying preprocessor obj on train datset
+[ 2024-12-02 14:12:16,552 ] 81 root - INFO - saving preprocessor object
+[ 2024-12-02 14:12:16,553 ] 30 root - INFO - Spliting training and testing data
+[ 2024-12-02 14:13:44,668 ] 79 root - INFO - best model found on testing dataset is RandomForestRegressor

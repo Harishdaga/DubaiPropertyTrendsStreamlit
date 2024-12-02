@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: DubaiPropertyTrends
+Version: 0.0.1
+Author: Harish Daga
+Author-email: mrharishdaga@gmail.com
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: dill
+Requires-Dist: xgboost
+Requires-Dist: numpy
