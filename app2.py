@@ -1,9 +1,37 @@
 import streamlit as st
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-st.header('Dubai Property Trends', divider=True)
 
-st.write('Predict Home Price')
+custom_css = """
+<style>
+h1 {
+        font-size: 3rem;
+        color: #0A6847; /* Main heading color */
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1:hover {
+        color: #7ABA78; /* Accent color on hover */
+    }
+        legend {
+        font-size: 2rem;
+        color: #0A6847; /* Matches primary text theme */
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    legend:hover {
+        color: #7ABA78; /* Accent color on hover */
+    }
+
+</style>
+"""
+
+st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown("<h1>Dubai Property Trends</h1>", unsafe_allow_html=True)
+st.markdown("<legend>Property Price Prediction</legend>", unsafe_allow_html=True)
 
 with st.form(key='user_form', border=False, enter_to_submit=True):
     a, b, c, d, e = st.columns(gap='small', vertical_alignment='top', spec=[.2, .2, .2, .2, .2])

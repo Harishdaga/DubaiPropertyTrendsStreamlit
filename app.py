@@ -25,6 +25,19 @@ h1 {
     legend:hover {
         color: #7ABA78; /* Accent color on hover */
     }
+    body {
+        background-color: #F6E9B2; /* Your desired background color */
+        font-family: Arial, Helvetica, sans-serif;
+        color: #0A6847; /* Text color */
+    }
+
+    /* Center the main content */
+    .stApp {
+        background-color: #F6E9B2; /* Matching the body background */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
 </style>
 """
