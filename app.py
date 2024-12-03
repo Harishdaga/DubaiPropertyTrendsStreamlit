@@ -47,7 +47,7 @@ st.markdown("<h1>Dubai Property Trends</h1>", unsafe_allow_html=True)
 st.markdown("<legend>Property Price Prediction</legend>", unsafe_allow_html=True)
 
 with st.form(key='user_form', border=False, enter_to_submit=True):
-    a, b, c, d, e = st.columns(gap='big', vertical_alignment='top', spec=[.2, .2, .2, .2, .2])
+    a, b, c, d, e = st.columns(gap='small', vertical_alignment='top', spec=[.2, .2, .2, .2, .2])
     latitude = a.number_input("Select Latitude",min_value=24.950000, max_value=25.400000, step=0.001)
     longitude = b.number_input('Select Longitude', min_value=54.950000, max_value=55.550000, step=0.001)
     size_in_sqft = c.number_input('Size in SQFT', min_value=0, max_value=250000)
