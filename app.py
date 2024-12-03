@@ -25,19 +25,6 @@ h1 {
     legend:hover {
         color: #FFE31A; /* Accent color on hover */
     }
-    body {
-        background-color: #3D5300; /* Your desired background color */
-        font-family: Arial, Helvetica, sans-serif;
-        color: #F09319; /* Text color */
-    }
-
-    /* Center the main content */
-    .stApp {
-        background-color: #3D5300; /* Matching the body background */
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
 
 </style>
 """
@@ -55,34 +42,34 @@ with st.form(key='user_form', border=False, enter_to_submit=True):
     no_of_bathrooms = e.number_input('No of Bathrooms', min_value=0, max_value=20, step=1)
 
     quality = a.selectbox('Quality', options=['Select an option', 'Low', 'Medium', 'High', 'Ultra'])
-    maid_room = b.selectbox('Maid Room', options=[True, False, 'Select an option'])
-    unfurnised = c.selectbox('Unfurnised', options=[True, False, 'Select an option'])
-    balcony = d.selectbox('Balcony', options=[True, False, 'Select an option'])
-    barbecue_area = e.selectbox('Barbecue area', options=[True, False, 'Select an option'])
-    built_in_wardrobes = a.selectbox('Built in Wardrobes', options=[True, False, 'Select an option'])
-    central_ac = b.selectbox('Central AC', options=[True, False, 'Select an option'])
-    childrens_play_area = c.selectbox('Childrens Play Area', options=[True, False, 'Select an option'])
-    childrens_pool = d.selectbox('Childrens Pool', options=[True, False, 'Select an option'])
-    concierge = e.selectbox('Concierge', options=[True, False, 'Select an option'])
-    covered_parking = a.selectbox('Covered Parking', options=[True, False, 'Select an option'])
-    kitchen_appliances = b.selectbox('Kitchen Appliances', options=[True, False, 'Select an option'])
-    lobby_in_building = c.selectbox('Lobby in Building', options=[True, False, 'Select an option'])
-    maid_service = d.selectbox('Maid Service', options=[True, False, 'Select an option'])
-    networked = e.selectbox('Networked', options=[True, False, 'Select an option'])
-    pets_allowed = a.selectbox('Pets Allowed', options=[True, False, 'Select an option'])
-    private_garden = b.selectbox('Private Garden', options=[True, False, 'Select an option'])
-    private_gym = c.selectbox('Private Gym', options=[True, False, 'Select an option'])
-    private_jacuzzi = d.selectbox('Private Jacuzzi', options=[True, False, 'Select an option'])
-    private_pool = e.selectbox('Private Pool', options=[True, False, 'Select an option'])
-    security = a.selectbox('Security', options=[True, False, 'Select an option'])
-    shared_gym = b.selectbox('Shared Gym', options=[True, False, 'Select an option'])
-    shared_pool = c.selectbox('Shared Pool', options=[True, False, 'Select an option'])
-    shared_spa = d.selectbox('Shared Spa', options=[True, False, 'Select an option'])
-    study = e.selectbox('Study', options=[True, False, 'Select an option'])
-    vastu_compliant = a.selectbox('Vastu Compliant', options=[True, False, 'Select an option'])
-    view_of_landmark = b.selectbox('View of Landmark', options=[True, False, 'Select an option'])
-    view_of_water = c.selectbox('View of Water', options=[True, False, 'Select an option'])
-    walk_in_closet = d.selectbox('Walk in Closet', options=[True, False, 'Select an option'])
+    maid_room = b.selectbox('Maid Room', options=['Select an option', True, False])
+    unfurnised = c.selectbox('Unfurnised', options=['Select an option', True, False])
+    balcony = d.selectbox('Balcony', options=['Select an option', True, False])
+    barbecue_area = e.selectbox('Barbecue area', options=['Select an option', True, False])
+    built_in_wardrobes = a.selectbox('Built in Wardrobes', options=['Select an option', True, False])
+    central_ac = b.selectbox('Central AC', options=['Select an option', True, False])
+    childrens_play_area = c.selectbox('Childrens Play Area', options=['Select an option', True, False])
+    childrens_pool = d.selectbox('Childrens Pool', options=['Select an option', True, False])
+    concierge = e.selectbox('Concierge', options=['Select an option', True, False])
+    covered_parking = a.selectbox('Covered Parking', options=['Select an option', True, False])
+    kitchen_appliances = b.selectbox('Kitchen Appliances', options=['Select an option', True, False])
+    lobby_in_building = c.selectbox('Lobby in Building', options=['Select an option', True, False])
+    maid_service = d.selectbox('Maid Service', options=['Select an option', True, False])
+    networked = e.selectbox('Networked', options=['Select an option', True, False])
+    pets_allowed = a.selectbox('Pets Allowed', options=['Select an option', True, False])
+    private_garden = b.selectbox('Private Garden', options=['Select an option', True, False])
+    private_gym = c.selectbox('Private Gym', options=['Select an option', True, False])
+    private_jacuzzi = d.selectbox('Private Jacuzzi', options=['Select an option', True, False])
+    private_pool = e.selectbox('Private Pool', options=['Select an option', True, False])
+    security = a.selectbox('Security', options=['Select an option', True, False])
+    shared_gym = b.selectbox('Shared Gym', options=['Select an option', True, False])
+    shared_pool = c.selectbox('Shared Pool', options=['Select an option', True, False])
+    shared_spa = d.selectbox('Shared Spa', options=['Select an option', True, False])
+    study = e.selectbox('Study', options=['Select an option', True, False])
+    vastu_compliant = a.selectbox('Vastu Compliant', options=['Select an option', True, False])
+    view_of_landmark = b.selectbox('View of Landmark', options=['Select an option', True, False])
+    view_of_water = c.selectbox('View of Water', options=['Select an option', True, False])
+    walk_in_closet = d.selectbox('Walk in Closet', options=['Select an option', True, False])
     submit_button = st.form_submit_button('Predict')
 
 if submit_button:
