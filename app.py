@@ -47,7 +47,7 @@ st.markdown("<h1>Dubai Property Trends</h1>", unsafe_allow_html=True)
 st.markdown("<legend>Property Price Prediction</legend>", unsafe_allow_html=True)
 
 with st.form(key='user_form', border=False, enter_to_submit=True):
-    a, b, c, d, e = st.columns(gap='small', vertical_alignment='top', spec=[.2, .2, .2, .2, .2])
+    a, b, c, d, e = st.columns(gap='big', vertical_alignment='top', spec=[.2, .2, .2, .2, .2])
     latitude = a.number_input("Select Latitude",min_value=24.950000, max_value=25.400000, step=0.001)
     longitude = b.number_input('Select Longitude', min_value=54.950000, max_value=55.550000, step=0.001)
     size_in_sqft = c.number_input('Size in SQFT', min_value=0, max_value=250000)
@@ -55,7 +55,7 @@ with st.form(key='user_form', border=False, enter_to_submit=True):
     no_of_bathrooms = e.number_input('No of Bathrooms', min_value=0, max_value=20, step=1)
 
     quality = a.selectbox('Quality', options=['Low', 'Medium', 'High', 'Ultra'])
-    maid_room = b.selectbox('Maid Room', options=[True, False])
+    maid_room = b.radio('Maid Room', options=[True, False])
     unfurnised = c.selectbox('Unfurnised', options=[True, False])
     balcony = d.selectbox('Balcony', options=[True, False])
     barbecue_area = e.selectbox('Barbecue area', options=[True, False])
